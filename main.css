@@ -1,0 +1,58 @@
+body {
+    background-color:steelblue;
+    color: goldenrod;
+}
+
+.title {
+    background-color: yellow;
+    color: green;
+    border: 8px dotted blue;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.85em;
+    line-height: 1.2em;
+}
+
+/*
+  This will select both of the article__header elements
+*/
+.article .article__header {
+    font-size: 1.85em;
+    line-height: 1.2em;
+}
+
+/*
+  This will select only the section and ignore the div
+*/
+/* .article > .article__header {
+    font-size: 1.85em;
+    line-height: 1.2em;
+} */
+
+/*
+  This will select only a section that directly follows another section
+*/
+section + section {
+    margin: 20px 0 10px 0;
+    background-color: red;
+  }
+  
+  
+  /*
+    This will select all sibling sections regardless if they are direct
+  */
+  section ~ section {
+    margin: 20px 0 10px 0;
+    color: green;
+  }
+
+.article__footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+    font-size: 1.2em;
+    font-style: italic;
+    background-color: azure;
+    color: deeppink;
+}
